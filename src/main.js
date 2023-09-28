@@ -78,7 +78,7 @@ function showHideDiv(pokemon){
 function renderPokemon(pokemonList){
   pokemons.innerHTML = "";
   for (let i=0; i < pokemonList.length; i++){
-    const changeBackground = bgColorPokemons.find((typeOfPokemons) => { //arrow function
+    const changeBackground = bgColorPokemons.find((typeOfPokemons) => { //find - encontra algo
       return typeOfPokemons.type === pokemonList[i].type[0] //compara os tipos de pokemons
     }) 
     const card = document.createElement("div")
@@ -99,4 +99,3 @@ function renderPokemon(pokemonList){
   statisticText.innerText = `Foram encontrados ${amountPokemon} tipos de pokemons, equivale a ${totalPercent}%`
 }
 renderPokemon(pokemonList);
-
