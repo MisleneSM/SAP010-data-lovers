@@ -25,7 +25,7 @@ const itensMenu = document.querySelector(".menu");
 
 //listeners
 
-window.addEventListener("pageshow", function(){//pageshow chama uma função
+window.addEventListener("pageshow", function(){
   currentUser = localStorage.getItem("nomeUsuario");
   nameUser.innerText = currentUser;
 });
